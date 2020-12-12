@@ -1,0 +1,15 @@
+.card {
+    width: 8%;
+    height: 140px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    margin: 2%;
+    transition: background-color 0.5s ease;
+}
+
+.card:hover {
+    opacity: 50%;
+    border: 2px solid black;
+    transition:opacity 0.5s ease;
+    transition:border 0.5s ease;
+}
