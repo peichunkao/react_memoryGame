@@ -8,8 +8,8 @@
 }
 
 .card:hover {
-    opacity: 50%;
+    opacity: 90%;
     border: 2px solid black;
-    transition:opacity 0.5s ease;
+    /* transition:opacity 0.5s ease; */
     transition:border 0.5s ease;
 }

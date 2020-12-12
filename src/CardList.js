@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Card from './Card'
 import './CardList.css'
 
-const BOX_NUMBER = 4;
+const BOX_NUMBER = 16;
 const CardState = {
     HIDING: 0,
     SHOWING: 1,
@@ -77,7 +77,7 @@ export default class CardList extends Component {
                     } else {
                         setTimeout(() => {
                             this.setCards(CardState.HIDING)
-                        },1000)
+                        },500)
                     }
                     this.setState({clickCounter:0})
                 }
@@ -95,6 +95,11 @@ export default class CardList extends Component {
     
     render() {
         const {cards} = this.state;
+
+        if (this.props.newGame === true) {
+            this.handleNewGame();
+            this.props.updateNewGame();
+        }
         
         return (
             <div className='cardList'>

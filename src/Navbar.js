@@ -6,7 +6,7 @@ export default function Navbar(props) {
         <header className='navbar'>
             <h2><a>Memory Game</a></h2>
             <nav>
-                <li><a>New Game</a></li>
+                <li><a onClick={props.handleNewGame}>New Game</a></li>
             </nav>
         </header>
     )
