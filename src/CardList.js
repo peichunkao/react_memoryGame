@@ -88,7 +88,6 @@ export default class CardList extends Component {
     handleNewGame() {
         const {cards} = this.state;
         const colorList =  randomColors(BOX_NUMBER, this.props.allColors);
-        console.log(BOX_NUMBER)
         const shuffeldCards = this.shuffleCards(cards, colorList);
         this.setState({cards: shuffeldCards, clickCounter: 0})
     }
